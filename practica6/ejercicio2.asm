@@ -1,42 +1,30 @@
 .data
-mensaje: .asciiz "For en MIPS \n"
-enter: .asciiz "Ingresa un numero: "
-num: .word 0
+texto: .asciiz "Hola mundo\n"
+mensaje: .asciiz "Ingresa un numero: "
 
 .text
+.globl main
+
 main:
-    # Imprimir mensaje de entrada
-    li $v0, 4
-    la $a0, enter
+    li $v0, 4 #imprime string
+    la $a0, mensaje #carga el numero
     syscall
 
-    # Leer número del usuario
-    li $v0, 5
+    li $v0, 5 #entrada de tipo int mientras el programa se ejecuta, el número se guarda en v0
     syscall
-    sw $v0, num  # Guardar el número ingresado
+    move $t0, $v0   # Guardar el número en t0 
 
-    # Cargar número en $t2
-    lw $t2, num  
+loop: 
+    beqz $t0, exit   # Si $t0 es 0 termina el programa
 
-    # Inicializar contador $t0 en 0
-    li $t0, 0
-
-loop:
-    # Si $t0 == $t2, salir del bucle
-    beq $t0, $t2, end  
-
-    # Imprimir mensaje
-    li $v0, 4
-    la $a0, mensaje
+    li $v0, 4 #imprime string
+    la $a0, texto #carga el mensaje
     syscall
 
-    # Incrementar contador
-    addi $t0, $t0, 1  
+    subi $t0, $t0 1 #le resta 1 al numero   
 
-    # Repetir el bucle
-    j loop  
+    j loop  # Repetir el loop
 
-end:
-    # Terminar el programa
-    li $v0, 10
+exit:
+    li $v0, 10 #sale del programa
     syscall
