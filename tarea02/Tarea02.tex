@@ -14,6 +14,15 @@
 \usepackage{booktabs}
 \usepackage{float}
 
+\usepackage{xcolor} % Paquete para colores
+\usepackage{enumitem} % Paquete para personalizar listas
+
+\usepackage[breaklinks=true]{hyperref}  % Permite el ajuste de los enlaces largos
+\usepackage{url}  % Paquete para manejar URLs largas
+\usepackage{breakurl}  % Paquete adicional para romper URLs
+\usepackage{microtype}  % Mejora el ajuste del texto
+\usepackage{microtype}
+\def\UrlBreaks{\do\/\do-\do_\do.\do:\do\?}
 \usepackage[backend=biber]{biblatex} % Paquete para gestionar las referencias\addbibresource{referencias.bib} 
 \addbibresource{referencias.bib} % Añadir el archivo .bib
 
@@ -45,18 +54,92 @@
 
 \section*{\textcolor{teal}{Preguntas}}
 
-\begin{enumerate}
-        \item La Arquitectura de Computadoras se dedica  únicamente al estudio de las instrucciones de una computadora y su desempeño respecto a estas ¿sí, no? Argumenta tu respuesta.
-        \item ¿Los registros son dispositivos de hardware que permiten almacenar cualquier valor en binario? Argumenta tu respuesta.
-        \item ¿Cuál es la diferencia entre un AMD Ryzen 5 y un Intel Core i5? ¿Qué tipo de organización de computadoras o microarquitectura tiene?
-        \item De los dos tipos de arquitecturas, RISC y CISC. ¿Cuál de las dos requiere un mayor número de instrucciones para realizar una tarea? ¿Por qué crees que así sea?
-        \item Menciona los tres factores de desempeño y de que dependen cada uno.
-        \item Un programa tarda 9 millones de ciclos en una computadora cuyo ciclo dura 3 ns. ¿Cuál es el tiempo de CPU?
-        \item Un programa tarda 14 millones de ciclos en una máquina a 2.4 GHz. ¿Cuál es el tiempo de CPU?
-        \item ¿En una arquitectura CISC el periodo de una señal de reloj puede ser más grande que en una  arquitectura RISC?
-        \item El Intel 4004 (i4004), un CPU de 4 bits, fue el primer microprocesador en un simple chip, así como el primero disponible comercialmente y contenía 2300 transistores. Utilizando la Ley de Moore, ¿cuántos transistores se esperaría que tuviera hoy en día?     
-        \item El Intel Core i9-9900K es un procesador de 64 bits con 8 núcleos con tecnología Hyper-Threading de Intel, la cual ejecuta 2 hilos en cada núcleo por lo que cuenta con 16 hilos de procesamiento en total. El Intel Core i9-9900K cuenta con 3052 mil millones de transistores.Comparando con tu respuesta anterior ¿Es mayor o menor a lo esperado? ¿Se cumplió la ley de Moore? Argumenta tu respuesta.
+\begin{enumerate}[label=\textcolor{teal}{\textbf{\arabic*.}}]
+%-------------Pregunta 1-------------------------------------------
+        \item La Arquitectura de Computadoras se dedica  únicamente al estudio de las instrucciones de una computadora y su desempeño respecto a estas ¿sí, no? Argumenta tu respuesta.\\
 
+            No, la arquitectura de computadoras se dedica al estudio de las instrucciones, a la organización de los componentes del hardware de una computadora, al desempeño y optimización, a los sistemas de entrada y salida etc.\\
+      
+%-------------Pregunta 2-------------------------------------------
+        \item ¿Los registros son dispositivos de hardware que permiten almacenar cualquier valor en binario? Argumenta tu respuesta.\\
+        
+            Los registros almacenan datos numéricos, caracteres, acumiladores, instrucciones, direcciones, registros de estado etc. en valores binarios. Todo se guarda en formato binario porque el hardware de las computadoras está construido con circuitos electrónicos. \\
+
+
+%-------------Pregunta 3-------------------------------------------
+        \item ¿Cuál es la diferencia entre un AMD Ryzen 5 y un Intel Core i5? ¿Qué tipo de organización de computadoras o microarquitectura tiene?
+        
+            \begin{center}
+                \begin{table}[h]
+                    \centering
+                    \renewcommand{\arraystretch}{1.3} % Espaciado entre filas para mejorar legibilidad
+                    \begin{tabular}{|p{6cm}|p{6cm}|} 
+                        \hline
+                        \textbf{AMD Ryzen 5} & \textbf{Intel Core i5} \\ 
+                        \hline
+                        Arquitectura Radeon RX Vega.  &  Arquitectura Intel UHD Graphics 770. \\ 
+                        \hline
+                        Cuenta con 6 núcleos y 12 hilos  &   Cuenta con 4 núcleos y 8 hilos  \\ 
+                        \hline
+                        Su frecuencia base es de 2.1 GHz, su frecuencia del bus es de 100 MHz  &   Su frecuencia base es de 0.9-2.4 GHz, su frecuencia del bus es de 100 MHz \\ 
+                        \hline  
+                        L1 caché: 64K (por núcleo), L2 caché: 512K (por núcleo), L3 caché: 8 MB (compartidos)  &   L1 caché: 95K (por núcleo), L2 caché: 1280K (por núcleo), L3 caché: 8 MB (compartidos) 100 MHz \\ 
+                        \hline  
+                        Capacidad máxima de memoria de 32 GB & Capacidad máxima de memoria de 64.\\
+                        \hline
+                        Puede incluir gráficos Radeon RX Vega 7 integrados sin necesidad de una tarjeta gráfica. & Viene con gráficos Gráficos Iris Xe G7 80EU, pero su desempeño es menos que el de los de Radeon.\\
+                        \hline
+                    \end{tabular}
+                \end{table}
+            \end{center}
+            
+%-------------Pregunta 4-------------------------------------------            
+        \item De los dos tipos de arquitecturas, RISC y CISC. ¿Cuál de las dos requiere un mayor número de instrucciones para realizar una tarea? ¿Por qué crees que así sea?\\
+        
+            Una característica de la arquitectura CISC es la microprogramación, lo que significa que cada instrucción de máquina es interpretada por un
+            microprograma localizado en una memoria en el circuito. Como trabaja con instrucciones complejas, cada instruccion puede realizar varias tareas.
+            Las instrucciones son decodificadas internamente y ejecutadas con una serie de
+            microinstrucciones almacenadas en una ROM interna.\\
+
+            En la arquitectura RISC se tiene un conjunto de instrucciones simplificado, lo cual elimina el microcódigo y la necesidad de
+            decodificar instrucciones complejas. Esto implica una reducción en el número
+            de ciclos de máquina necesarios para la ejecución de la instrucción. Como las instrucciones son simplificadas, 
+            no pueden hacer muchas tareas, aunque las hagan mas rápido.\\
+
+            Por lo tanto la arquitectura RISC requiere un mayor número de instrucciones para realizar una tarea.\\
+        
+%-------------Pregunta 5-------------------------------------------
+
+        \item Menciona los tres factores de desempeño y de que dependen cada uno.
+      
+            \begin{itemize}
+                \item Tiempo de respuesta.\\
+                    Mide el timepo que tarda el sistema en realizar una tarea, mientras mas pequeño sea el tiempo es mejor. Depende de la velocidad del procesador y el número de ciclos de reloj para ejecutar una instruccion.
+                \item Rendimiento.\\
+                    Mide el número de tareas que se hacen en una unidad de tiempo, mientras mayr sea ese número, es mejor. Depende de la cantidad de núcleos y de la cantidad de instrucciones que la CPU puede realizar en cierto timepo.
+                \item Tiempo de ejecución\\
+                    Mide cuanto tiempo efectivo estuvo el CPU ejecutando un programa ($T_P$). Depende de el número total de ciclos de reloj que transcurren desde que P inicia y hasta que
+                    termina ($C_P$) y la duración del ciclo ($d$) que es quivalente a $1/f$ donde f es la frecuencia de operación \\
+                    \begin{center}
+                        $T_P = \frac{C_P}{f}$
+                    \end{center}
+            \end{itemize}
+
+%-------------Pregunta 6-------------------------------------------
+
+    \item Un programa tarda 9 millones de ciclos en una computadora cuyo ciclo dura 3 ns. ¿Cuál es el tiempo de CPU?
+%-------------Pregunta 7-------------------------------------------
+
+    \item Un programa tarda 14 millones de ciclos en una máquina a 2.4 GHz. ¿Cuál es el tiempo de CPU?
+
+%-------------Pregunta 8-------------------------------------------
+    \item ¿En una arquitectura CISC el periodo de una señal de reloj puede ser más grande que en una  arquitectura RISC?
+
+%-------------Pregunta 9-------------------------------------------
+    \item El Intel 4004 (i4004), un CPU de 4 bits, fue el primer microprocesador en un simple chip, así como el primero disponible comercialmente y contenía 2300 transistores. Utilizando la Ley de Moore, ¿cuántos transistores se esperaría que tuviera hoy en día?     
+
+%-------------Pregunta 10-------------------------------------------
+    \item El Intel Core i9-9900K es un procesador de 64 bits con 8 núcleos con tecnología Hyper-Threading de Intel, la cual ejecuta 2 hilos en cada núcleo por lo que cuenta con 16 hilos de procesamiento en total. El Intel Core i9-9900K cuenta con 3052 mil millones de transistores.Comparando con tu respuesta anterior ¿Es mayor o menor a lo esperado? ¿Se cumplió la ley de Moore? Argumenta tu respuesta.
 
 
             
