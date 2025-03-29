@@ -121,26 +121,46 @@
                     Mide cuanto tiempo efectivo estuvo el CPU ejecutando un programa ($T_P$). Depende de el número total de ciclos de reloj que transcurren desde que P inicia y hasta que
                     termina ($C_P$) y la duración del ciclo ($d$) que es quivalente a $1/f$ donde f es la frecuencia de operación \\
                     \begin{center}
-                        $T_P = \frac{C_P}{f}$
+                        $T_P = {C_P} \cdot {d} =\frac{C_P}{f}$
                     \end{center}
             \end{itemize}
 
 %-------------Pregunta 6-------------------------------------------
 
-    \item Un programa tarda 9 millones de ciclos en una computadora cuyo ciclo dura 3 ns. ¿Cuál es el tiempo de CPU?
+    \item Un programa tarda 9 millones de ciclos en una computadora cuyo ciclo dura 3 ns. ¿Cuál es el tiempo de CPU?\\
+    Usando la formula anterior:
+    \begin{center}
+        $T_P = {C_P} \cdot {d}$
+    \end{center}
+    Donde:\\
+    ${C_P}=9 \times 10^{6}$\\
+    $d=3ns = 3 \times 10^{-9}$\\
+    Así,\\
+    $T_P = (9 \times 10^{6})(3 \times 10^{-9})= 2.7\times10^{-2}s=27ms$
 %-------------Pregunta 7-------------------------------------------
 
-    \item Un programa tarda 14 millones de ciclos en una máquina a 2.4 GHz. ¿Cuál es el tiempo de CPU?
-
+    \item Un programa tarda 14 millones de ciclos en una máquina a 2.4 GHz. ¿Cuál es el tiempo de CPU?\\
+    Usando la formula anterior:
+    \begin{center}
+        $T_P = {C_P} \cdot {d}$
+    \end{center}
+    $d = \frac{1}{2.4\times 10^{9}} = 0.4167ns$\\
+    $T_P = (14 \times 10^{6})(0.4167 \times 10^{-9})= 0.0058s=5.8ms$
 %-------------Pregunta 8-------------------------------------------
-    \item ¿En una arquitectura CISC el periodo de una señal de reloj puede ser más grande que en una  arquitectura RISC?
+    \item ¿En una arquitectura CISC el periodo de una señal de reloj puede ser más grande que en una  arquitectura RISC?\\
+    Sí porque una arquitectura CISC tiende a tener instrucciones más complejas que en las RISC por lo que les lleva más ciclos de reloj realizar sus instrucciones.
 
 %-------------Pregunta 9-------------------------------------------
-    \item El Intel 4004 (i4004), un CPU de 4 bits, fue el primer microprocesador en un simple chip, así como el primero disponible comercialmente y contenía 2300 transistores. Utilizando la Ley de Moore, ¿cuántos transistores se esperaría que tuviera hoy en día?     
+    \item El Intel 4004 (i4004), un CPU de 4 bits, fue el primer microprocesador en un simple chip, así como el primero disponible comercialmente y contenía 2300 transistores. Utilizando la Ley de Moore, ¿cuántos transistores se esperaría que tuviera hoy en día?  \\
+    El i4004 es de 1971, por lo que han pasado, hasta 2025, 54 años.\\
+    Según la ley de Moore el número de transitores se duplica cada 18 meses por lo que:\\
+    $\frac{54}{1.5}=36$\\
+    Así, se esperaría que hoy en día tuvieramos $2300\times2^{36}$, es decir, aproximadamente $1.58\times 10^{14}$
 
 %-------------Pregunta 10-------------------------------------------
-    \item El Intel Core i9-9900K es un procesador de 64 bits con 8 núcleos con tecnología Hyper-Threading de Intel, la cual ejecuta 2 hilos en cada núcleo por lo que cuenta con 16 hilos de procesamiento en total. El Intel Core i9-9900K cuenta con 3052 mil millones de transistores.Comparando con tu respuesta anterior ¿Es mayor o menor a lo esperado? ¿Se cumplió la ley de Moore? Argumenta tu respuesta.
-
+    \item El Intel Core i9-9900K es un procesador de 64 bits con 8 núcleos con tecnología Hyper-Threading de Intel, la cual ejecuta 2 hilos en cada núcleo por lo que cuenta con 16 hilos de procesamiento en total. El Intel Core i9-9900K cuenta con 3052 mil millones de transistores.Comparando con tu respuesta anterior ¿Es mayor o menor a lo esperado? ¿Se cumplió la ley de Moore? Argumenta tu respuesta.\\
+    Tomando 3052 mil millones como 3.052 billones de transitores, es decir, $3.052\times10^{12}$. A comparación de los $1.58\times 10^{14}$ o en billones $158\times 10^{12}$ hay de una diferencia 51 veces menor que lo que nos dice la Ley de Moore.\\
+    Claramente no se cunplió la ley de Moore, esto debido a que el incremento de transitores, también se debía de aumentar la frecuencia del procesador para tener un desempeño emparejado pero esto consume muhco y se calienta mucho hasta que se llego al punto de que ya no se pudo seguir manteniendo la Ley de Moore.
 
             
     
