@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744321746.75498 -1
-  "Tarea03.bcf" 1744321746.54793 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
+["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744322187.87206 -1
+  "Tarea03.bcf" 1744322187.69813 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
   "referencias.bib" 1744305019.08987 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "Tarea03.bbl"
   "Tarea03.blg"
   (rewritten before read)
-["pdflatex"] 1744321745.15584 "/home/ilse/CC/cuarto_semestre/Arquitectura/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744321746.75543 0
+["pdflatex"] 1744322186.39993 "/home/ilse/CC/cuarto_semestre/Arquitectura/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744322187.87246 0
   "/home/ilse/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1744316374.6124 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "/home/ilse/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1714919752.68208 24230750 b9a92ed0af9ce75d654cff61bd471117 ""
   "/home/ilse/.miktex/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1714903500.08909 1004 54797486969f23fa377b128694d548df ""
@@ -129,12 +129,12 @@
   "/home/ilse/.miktex/texmfs/install/tex/latex/url/url.sty" 1714903603.37822 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/ilse/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1714903604.25423 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "/home/ilse/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1714903606.43825 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/ilse/CC/cuarto_semestre/Arquitectura/Arqui/tarea03/Tarea03.tex" 1744321743.29194 9722 87aeb79653fcce1d94d2b4d69198bcf3 ""
-  "Tarea03.aux" 1744321746.53993 440 056a01b15e6ae150c612f7ad23bb6c6c "pdflatex"
+  "/home/ilse/CC/cuarto_semestre/Arquitectura/Arqui/tarea03/Tarea03.tex" 1744322185.98613 10573 8b2be635bfec3ebf06a3305add12d06c ""
+  "Tarea03.aux" 1744322187.69013 440 056a01b15e6ae150c612f7ad23bb6c6c "pdflatex"
   "Tarea03.bbl" 1744321731.84799 466 76d65a242ec496c9b4361af646ff12cb "biber Tarea03"
-  "Tarea03.out" 1744321746.35993 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Tarea03.run.xml" 1744321746.54793 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
-  "Tarea03.tex" 1744321743.29194 9722 87aeb79653fcce1d94d2b4d69198bcf3 ""
+  "Tarea03.out" 1744322187.48613 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Tarea03.run.xml" 1744322187.70213 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
+  "Tarea03.tex" 1744322185.98613 10573 8b2be635bfec3ebf06a3305add12d06c ""
   "img/mapa7.jpg" 1744317156.31756 6557 1958de51695f9c5ffacbea10d6c8c59a ""
   "img/mapa9.jpg" 1744320681.21134 6465 905b8209ed3bf50454a18874f4a9a539 ""
   (generated)
