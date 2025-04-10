@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.5)  10 APR 2025 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.5)  10 APR 2025 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -786,22 +786,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--66
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--99
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 77--102
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--121
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 
  []
 
@@ -809,31 +814,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--121
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 
-       [1]
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+l.117     \end{center}
+                       [1]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-<img/mapa7.jpg, id=22, 258.9675pt x 107.40125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+<img/mapa7.jpg, id=21, 258.9675pt x 107.40125pt>
 File: img/mapa7.jpg Graphic file (type jpg)
 <use img/mapa7.jpg>
-Package pdftex.def Info: img/mapa7.jpg  used on input line 171.
+Package pdftex.def Info: img/mapa7.jpg  used on input line 186.
 (pdftex.def)             Requested size: 142.26378pt x 59.00366pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
-<img/mapa9.jpg, id=23, 221.82875pt x 109.40875pt>
+<img/mapa9.jpg, id=29, 221.82875pt x 109.40875pt>
 File: img/mapa9.jpg Graphic file (type jpg)
 <use img/mapa9.jpg>
-Package pdftex.def Info: img/mapa9.jpg  used on input line 199.
+Package pdftex.def Info: img/mapa9.jpg  used on input line 214.
 (pdftex.def)             Requested size: 142.26378pt x 70.16492pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./img/mapa7.jpg>] [3 <./img/mapa9.jpg>] (Tarea03.aux
+[3 <./img/mapa7.jpg> <./img/mapa9.jpg>] [4] (Tarea03.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -849,17 +867,17 @@ Package logreq Info: Writing requests to 'Tarea03.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22335 strings out of 474425
- 382146 string characters out of 5746967
- 1946493 words of memory out of 5000000
+ 22336 strings out of 474425
+ 382152 string characters out of 5746967
+ 1948493 words of memory out of 5000000
  44379 multiletter control sequences out of 15000+600000
  564741 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,81p,1061b,1839s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/ilse/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Tarea03.pdf (4 pages, 113371 bytes).
+Output written on Tarea03.pdf (5 pages, 115139 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  14347 words of extra memory for PDF output out of 14400 (max. 10000000)
 
