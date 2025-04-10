@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744317539.00227 0
+["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744321107.25165 0
   "Tarea03.bcf" 0 -1 0 "pdflatex"
   "referencias.bib" 0 -1 0 ""
   (generated)
   "Tarea03.bbl"
   "Tarea03.blg"
   (rewritten before read)
-["pdflatex"] 1744317537.24652 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744317539.00295 0
+["pdflatex"] 1744321105.57685 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744321107.25214 0
   "/etc/texmf/web2c/texmf.cnf" 1741660740.90132 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744317536.95897 6461 a0acfecc0bbb9d154959545d84646dfc ""
+  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744321103.63869 7188 f600e3178e0b2e3c4e001359caf50052 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -131,11 +131,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1743297026 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1743297063 3348436 85e2336bc9c3cc1e6f838c6b05db2f31 ""
-  "Tarea03.aux" 1744317538.71088 455 247d9a6daff572040de55ef0783b9eb7 "pdflatex"
+  "Tarea03.aux" 1744321106.99083 455 6abb58f0e60823a6e002668353ca8cd5 "pdflatex"
   "Tarea03.bbl" 0 -1 0 "biber Tarea03"
-  "Tarea03.out" 1744317538.44289 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Tarea03.run.xml" 1744317538.72288 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
-  "Tarea03.tex" 1744317536.95897 6461 a0acfecc0bbb9d154959545d84646dfc ""
+  "Tarea03.out" 1744321106.73482 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Tarea03.run.xml" 1744321106.99884 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
+  "Tarea03.tex" 1744321103.63869 7188 f600e3178e0b2e3c4e001359caf50052 ""
   (generated)
   "Tarea03.aux"
   "Tarea03.bcf"
