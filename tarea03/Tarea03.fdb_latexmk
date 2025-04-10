@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber Tarea03"] 1744321848.02698 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744322014.49549 0
-  "Tarea03.bcf" 1744322014.38041 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
+["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744327252.92427 -1
+  "Tarea03.bcf" 1744327252.76431 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
+  "referencias.bib" 1744321842.92891 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "Tarea03.bbl"
   "Tarea03.blg"
   (rewritten before read)
-["pdflatex"] 1744322012.81822 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744322014.49592 0
+["pdflatex"] 1744327250.69903 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744327252.92492 0
   "/etc/texmf/web2c/texmf.cnf" 1741660740.90132 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744322012.54848 10492 88631b6ceff778ac1749ad8df7c5b021 ""
+  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744327250.36026 13768 674f4aeb6a493696bcbce0702f112e6c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -131,11 +132,11 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1743297026 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1743297063 3348436 85e2336bc9c3cc1e6f838c6b05db2f31 ""
-  "Tarea03.aux" 1744322014.37241 478 43d2a17092e182e29a2f1853c3adaa3c "pdflatex"
+  "Tarea03.aux" 1744327252.75231 478 2efdcb27db1ab7bf75b18daa3a001593 "pdflatex"
   "Tarea03.bbl" 1744321849.04852 466 76d65a242ec496c9b4361af646ff12cb "biber Tarea03"
-  "Tarea03.out" 1744322014.07243 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Tarea03.run.xml" 1744322014.38441 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
-  "Tarea03.tex" 1744322012.54848 10492 88631b6ceff778ac1749ad8df7c5b021 ""
+  "Tarea03.out" 1744327252.3363 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Tarea03.run.xml" 1744327252.76431 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
+  "Tarea03.tex" 1744327250.36026 13768 674f4aeb6a493696bcbce0702f112e6c ""
   "img/mapa7.jpg" 1744321842.92891 6557 1958de51695f9c5ffacbea10d6c8c59a ""
   "img/mapa9.jpg" 1744321842.92891 6465 905b8209ed3bf50454a18874f4a9a539 ""
   (generated)
