@@ -216,6 +216,11 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx
 OUTPUT Tarea03.bcf
+INPUT Tarea03.bbl
+INPUT ./Tarea03.bbl
+INPUT ./Tarea03.bbl
+INPUT ./Tarea03.bbl
+INPUT Tarea03.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -250,6 +255,16 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./img/mapa7.jpg
+INPUT ./img/mapa7.jpg
+INPUT ./img/mapa7.jpg
+INPUT ./img/mapa7.jpg
+INPUT ./img/mapa7.jpg
+INPUT ./img/mapa9.jpg
+INPUT ./img/mapa9.jpg
+INPUT ./img/mapa9.jpg
+INPUT ./img/mapa9.jpg
+INPUT ./img/mapa9.jpg
 INPUT Tarea03.aux
 INPUT ./Tarea03.out
 INPUT ./Tarea03.out
@@ -261,3 +276,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
