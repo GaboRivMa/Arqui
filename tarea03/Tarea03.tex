@@ -58,8 +58,10 @@
 
 \begin{enumerate}[label=\textcolor{teal}{\textbf{\arabic*.}}]
 %-------------Pregunta 1-------------------------------------------
-    \item Demuestra que $x(yz)=(xy)z$ 
-        $\therefore x(yz)=(xy)z$ 
+    \item Demuestra que $x(yz)=(xy)z$ \\
+    
+        $x(yz)=(xy)z$ T6b\\ 
+        $\therefore x(yz)=(xy)z$  \\
 %-------------Pregunta 2------------------------------------------- 
     \item Demuestra si la siguiente igualdad es válida $x(\overline{x}+y)=xy$\\
     $x(\overline{x}+y)=x\overline{x}+xy$ \hspace{1cm} Por distributividad\\
@@ -289,7 +291,7 @@
     \end{center}
    
 %-------------Pregunta 11-------------------------------------------
-    \item Utilizando el algoritmo de Quine-McCluskey realiza la siguiente reducción.
+    \item Utilizando el algoritmo de Quine-McCluskey realiza la siguiente reducción.\\
 
         \begin{center}
             $F(x_0,x_1,x_2,x_3,x_4) = 
@@ -300,13 +302,152 @@
             + x_0 \overline{x_1} x_2 x_3 x_4    
             + x_0 x_1 \overline{ x_2 x_3} x_4 
             + \overline{x_0} x_1 \overline{ x_2 x_3} x_4 
-            + x_0 x_1 x_2 \overline{ x_3} x_4 
-            + x_0 x_1 x_2 x_3 x_4 
-             $
+            + x_0 x_1 x_2 \overline{ x_3} x_4
+            + x_0 x_1 x_2 x_3 x_4
+            $
+        \end{center}
+        
+        \begin{center}
+            \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                Termino & Binario & Decial & Índice (\# 1s)\\ 
+                \hline
+                $\overline{x_0 x_1 x_2 x_3 x_4}$  & 00000 & 0 & 0 \\ 
+                \hline 
+                $\overline{x_0 x_1 x_2} x_3 \overline{x_4} $ & 00010 & 2 & 1 \\ 
+                \hline 
+                $\overline{x_0} x_1 x_2 x_3 \overline{x_4} $ & 01110 & 14 & 3 \\ 
+                \hline 
+                $ \overline{x_0} x_1 \overline{x_2} x_3 \overline{x_4}$ & 01010 & 10 & 2 \\ 
+                \hline 
+                $x_0 \overline{x_1} x_2 x_3 x_4$ & 10111 & 23 & 4 \\ 
+                \hline 
+                $x_0 x_1 \overline{ x_2 x_3} x_4 $ & 11001 & 25 & 3 \\ 
+                \hline 
+                $ \overline{x_0} x_1 \overline{ x_2 x_3} x_4 $ & 01001 & 9 & 2 \\
+                \hline 
+                $x_0 x_1 x_2 \overline{ x_3} x_4 $ & 11101 & 29 & 4 \\ 
+                \hline
+                $x_0 x_1 x_2 x_3 x_4 $ & 11111 & 31 & 5 \\ 
+                \hline  
+            \end{tabular}
+        \end{table}
         \end{center}
 
+        Agrupamos los números binarios según su índice.\\
+
+        \begin{center}
+            \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                Binario & Decial & Índice\\ 
+                \hline
+                00000 & 0 & 0 \\ 
+                \hline 
+                00010 & 2 & 1 \\ 
+                \hline 
+                01001 & 9 & 2 \\
+                \hline 
+                01010 & 10 & 2 \\ 
+                \hline 
+                01110 & 14 & 3 \\ 
+                \hline 
+                11001 & 25 & 3 \\ 
+                \hline 
+                10111 & 23 & 4 \\ 
+                \hline 
+                11101 & 29 & 4 \\ 
+                \hline
+                11111 & 31 & 5 \\ 
+                \hline  
+            \end{tabular}\\
+        \end{table}
+        \end{center}
+
+        Obtenemos las adyacencias
+
+        \begin{center}
+            \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|}
+                \hline
+                Adyacencia de orden I & Binario\\ 
+                \hline
+                0,2 & 000-0 \\ 
+                \hline 
+                2,10 & 0-010 \\ 
+                \hline 
+                9,25 & -1001 \\
+                \hline 
+                10,14 & 01-10 \\ 
+                \hline 
+                25,29 & 11-01 \\ 
+                \hline 
+                23,31 & 1-111 \\ 
+                \hline 
+                29,31 & 111-1 \\ 
+                \hline 
+            \end{tabular}\\
+        \end{table}
+        \end{center}
+
+        Nombramos las adyacencias \\
+
+
+        \begin{center}
+            \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|}
+                \hline
+                Adyacencia & Nombre\\ 
+                \hline
+                0,2 & Pl1\\ 
+                \hline 
+                2,10 & Pl2 \\ 
+                \hline 
+                9,25 & Pl3 \\
+                \hline 
+                10,14 & Pl4 \\ 
+                \hline 
+                25,29 & Pl5 \\ 
+                \hline 
+                23,31 & Pl6 \\ 
+                \hline 
+                29,31 & Pl7 \\ 
+                \hline 
+            \end{tabular}\\
+        \end{table}
+        
+            \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+                \hline
+                    & 0 & 2 & 9 & 10 & 14 & 23 & 25 & 29 & 31\\ 
+                \hline
+                Pl1 & X & X &  &  &  &  &  &  & \\ 
+                \hline 
+                Pl2 &  & X &  & X &  &  &  &  & \\ 
+                \hline 
+                Pl3 &  &  & X &  &  &  & X &  & \\
+                \hline 
+                Pl4 &  &  &  & X & X &  &  &  & \\ 
+                \hline 
+                Pl5 &  &  &  &  &  &  & X & X & \\ 
+                \hline 
+                Pl6 &  &  &  &  &  & X &  &  & X\\ 
+                \hline 
+                Pl7 &  &  &  &  &  &  &  & X & X\\ 
+                \hline 
+            \end{tabular}\\
+        \end{table}
+        \end{center}
+
+
 %-------------Pregunta 12-------------------------------------------
-    \item Utilizando el algoritmo de Quine-McCluskey realiza la siguiente reducción.
+    \item Utilizando el algoritmo de Quine-McCluskey realiza la siguiente reducción.\\
         \begin{center}
             $F(x_0,x_1,x_2,x_3,x_4) = 
             \overline{x_0 x_1 x_2 x_3 x_4} 
@@ -321,6 +462,41 @@
             + x_0 x_1 x_2 \overline{ x_3} x_4 
             + x_0 x_1 x_2 x_3 x_4 
             $
+        \end{center}
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                Termino & Binario & Decial & Índice (\# 1s)\\ \hline
+                $\overline{x_0 x_1 x_2 x_3 x_4}$  & 00000 & 0 & 0 \\ \hline
+                $\overline{x_0 x_1 x_2} x_3 \overline{x_4}$  & 00010 & 2 & 1 \\ \hline  
+                $\overline{x_0 x_1} x_2 x_3 \overline{x_4}$  & 00110 & 6 & 2 \\ \hline  
+                $\overline{x_0 x_1} x_2 x_3 x_4$  & 00111 & 7 & 3 \\ \hline  
+                $\overline{x_0} x_1 x_2 x_3 \overline{x_4}$  & 01110 & 14 & 3 \\ \hline  
+                $\overline{x_0} x_1 \overline{x_2} x_3 \overline{x_4}$  & 01010 & 10 & 2 \\ \hline  
+                $x_0 \overline{x_1} x_2 x_3 x_4$  & 10111 & 23 & 4 \\ \hline  
+                $x_0 x_1 \overline{x_2 x_3} x_4$  & 11001 & 25 & 3 \\ \hline  
+                $\overline{x_0} x_1 \overline{x_2 x_3} x_4$  & 01001 & 9 & 2 \\ \hline  
+                $x_0 x_1 x_2 \overline{x_3} x_4$  & 11101 & 29 & 4 \\ \hline  
+                $x_0 x_1 x_2 x_3 x_4$  & 11111 & 31 & 5 \\ \hline  
+            \end{tabular}
+        \end{center}
+        Agrupamos los números binarios según su indice:\\
+        \begin{center}
+            \begin{tabular}{|c|c|c|}
+                \hline
+                Binario & Decial & Índice\\ \hline
+                00000 & 0 & 0 \\ \hline
+                00010 & 2 & 1 \\ \hline  
+                00110 & 6 & 2 \\ \hline 
+                01010 & 10 & 2 \\ \hline
+                01001 & 9 & 2 \\ \hline  
+                00111 & 7 & 3 \\ \hline  
+                01110 & 14 & 3 \\ \hline  
+                11001 & 25 & 3 \\ \hline    
+                10111 & 23 & 4 \\ \hline  
+                11101 & 29 & 4 \\ \hline  
+                11111 & 31 & 5 \\ \hline  
+            \end{tabular}
         \end{center}
     
 
