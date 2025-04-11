@@ -1,13 +1,14 @@
 # Fdb version 4
-["biber Tarea03"] 1744327699.06675 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744329990.08051 0
-  "Tarea03.bcf" 1744329989.88237 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
+["biber Tarea03"] 0 "Tarea03.bcf" "Tarea03.bbl" "Tarea03" 1744335543.44253 -1
+  "Tarea03.bcf" 1744335543.26952 108088 b7b42e4a9ec1bd2e1b80f3aea02d3096 "pdflatex"
+  "referencias.bib" 1744321842.92891 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "Tarea03.bbl"
   "Tarea03.blg"
   (rewritten before read)
-["pdflatex"] 1744329987.5604 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744329990.08169 0
+["pdflatex"] 1744335541.0133 "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" "Tarea03.pdf" "Tarea03" 1744335543.44316 0
   "/etc/texmf/web2c/texmf.cnf" 1741660740.90132 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744329984.63331 19901 92459a8790a982a461e15af70d643afb ""
+  "/home/gabriel_/Documentos/Arqui/tarea03/Tarea03.tex" 1744335538.2375 25479 71a3a2116ed208cf604f0b6f422c98b2 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -29,6 +30,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
@@ -85,6 +87,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/spanish.lbx" 1711143581 47926 a9a2e5a53d52e80cf54a5601aa76edd2 ""
   "/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty" 1579038678 6078 f1cb470c9199e7110a27851508ed7a5c ""
   "/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty" 1365893995 8468 9af34887a0e6e535b004c39238830991 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty" 1720383029 12726 67708fc852a887b2ba598148f60c3756 ""
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1739306980 46850 d87daedc2abdc653769a6f1067849fe0 ""
@@ -94,6 +97,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1713382759 19440 9da9dcbb27470349a580fca7372d454b ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty" 1730496337 7245 57f7defed4fb41562dc4b6ca13958ca9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty" 1730496337 18363 dee506cb8d56825d8a4d020f5d5f8704 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty" 1717359999 8010 6f2ad8c2b2ffbd607af6475441c7b5e4 ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1717359999 2671 70891d50dac933918b827d326687c6e8 ""
@@ -123,6 +127,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657483315 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty" 1736023606 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "/usr/share/texlive/texmf-dist/tex/latex/titling/titling.sty" 1252107870 7358 95ac619994bd30d405a74f3eca431c84 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty" 1730496337 14552 27664839421e418b87f56fa4c6f66b1a ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty" 1730496337 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
@@ -131,11 +136,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1741904018 41538 c016915c1d51223b6dbbfe27341748a8 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1743297026 5467255 9a64d1b40e0b893fc5588ecce9d8accf ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1743297063 3348436 85e2336bc9c3cc1e6f838c6b05db2f31 ""
-  "Tarea03.aux" 1744329989.86636 478 08ef01714cbd48c54edac323a13bbf1a "pdflatex"
-  "Tarea03.bbl" 1744327700.45362 466 76d65a242ec496c9b4361af646ff12cb "biber Tarea03"
-  "Tarea03.out" 1744329989.40227 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Tarea03.run.xml" 1744329989.88237 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
-  "Tarea03.tex" 1744329984.63331 19901 92459a8790a982a461e15af70d643afb ""
+  "Tarea03.aux" 1744335543.25352 479 c3686416a70c6b7400308f271f02b353 "pdflatex"
+  "Tarea03.bbl" 1744334817.6376 466 76d65a242ec496c9b4361af646ff12cb "biber Tarea03"
+  "Tarea03.out" 1744335542.69352 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Tarea03.run.xml" 1744335543.26952 2327 7fa5c75ca4fcf51272e2c1f870bd34b3 "pdflatex"
+  "Tarea03.tex" 1744335538.2375 25479 71a3a2116ed208cf604f0b6f422c98b2 ""
+  "img/12.png" 1744335436.04933 59362 911ebc1a961cffc12543549245f48522 ""
+  "img/mapa11.1.png" 1744330047.52224 37498 8358a978801103c73c5ff6c362ff0215 ""
+  "img/mapa11.2.png" 1744330047.52224 8869 e0093cf9bf25f797fa5b7b649f5be947 ""
   "img/mapa7.jpg" 1744321842.92891 6557 1958de51695f9c5ffacbea10d6c8c59a ""
   "img/mapa9.jpg" 1744321842.92891 6465 905b8209ed3bf50454a18874f4a9a539 ""
   (generated)
