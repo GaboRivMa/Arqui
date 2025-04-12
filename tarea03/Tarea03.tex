@@ -65,11 +65,11 @@
         $\therefore x(yz)=(xy)z$  \\
 %-------------Pregunta 2------------------------------------------- 
     \item Demuestra si la siguiente igualdad es válida $x(\overline{x}+y)=xy$\\
-    $x(\overline{x}+y)=x\overline{x}+xy$ \hspace{1cm} Por distributividad\\
-    \hfill{$x\overline{x}+xy$}$=0+xy$ \hspace{1.5cm} Por complemento\\
-    \hfill{$0+xy$}$=xy$  \hspace{2.5cm} Por neutro en $+$\\ 
-        
-            
+     
+    $x(\overline{x}+y)=x\overline{x}+xy$ \hspace{1cm} P4a\\
+    \hfill{$x\overline{x}+xy$}$=0+xy$ \hspace{1.5cm} P5b\\
+    \hfill{$0+xy$}$=xy$  \hspace{2.5cm} P2a \\ 
+    $\therefore x(\overline{x}+y)=xy$\\
 
 
 %-------------Pregunta 3-------------------------------------------
@@ -106,8 +106,9 @@
 %-------------Pregunta 4-------------------------------------------            
     \item  Demuestra si la siguiente igualdad es válida $\overline{xy}=\overline{x} \cdot \overline{y}$\\
     Vamos a hacerlo con una tabla de verdad:\\
-    \begin{center}
-        \begin{tabular}{|c|c|c|c|c|c|c|}
+    \begin{table}[H]
+    \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|} 
             \hline
             $x$ & $y$ & $\overline{x}$ & $\overline{y}$ & $xy$ & $\overline{xy}$ & $\overline{x} \cdot \overline{y}$ \\ \hline
             0 & 0 & 1 & 1 & 0 & 1 & 1 \\ \hline
@@ -115,7 +116,7 @@
             1 & 0 & 0 & 1 & 0 & 1 & 0 \\ \hline
             1 & 1 & 0 & 0 & 1 & 0 & 0 \\ \hline
         \end{tabular}
-    \end{center}
+    \end{table}
     Como podemos ver $\overline{xy} \neq \overline{x} \cdot \overline{y}$\\
     $\therefore$ La igualdad no es válida.  
         
@@ -154,7 +155,8 @@
         $x \cdot 1 + \overline{z} = x + \overline{z}$\\
         Ahora tenemos que $F(x,y,z) = x + \overline{z}$\\
         Ahora buscaremos los mintérminos con una tabla de verdad:\\
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|c|c|c|c|}
                 \hline
                 $x$ & $y$ & $z$ & $\overline{z}$ & $x + \overline{z}$ & Mintérminos\\ \hline
@@ -167,7 +169,7 @@
                 1 & 1 & 0 & 1 & 1 & $m_{5}$\\ \hline
                 1 & 1 & 1 & 0 & 1 & $m_{6}$\\ \hline
             \end{tabular}
-        \end{center}
+        \end{table}
 %-------------Pregunta 7-------------------------------------------
 
     \item Simplifica la siguiente función usando su tabla de verdad asociada y mapas de Karnaugh.
@@ -178,8 +180,7 @@
 
         Tabla de verdad
 
-        \begin{center}
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|c|c|}
                 \hline
@@ -203,11 +204,10 @@
                 \hline 
             \end{tabular}\\
         \end{table}
-        \end{center}
 
         Mapa de Karnaugh
 
-        \begin{figure}[h]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=5 cm]{img/mapa7.jpg}
         \end{figure}
@@ -237,7 +237,8 @@
         $\overline{y}z \cdot (1) = \overline{y}z$\\
         Así $F(x,y,z) = \overline{y}z$\\
         Ahora buscaremos los maxitérminos con una tabla de verdad:\\
-        \begin{center}
+        \begin{table} [h]
+            \centering
             \begin{tabular}{|c|c|c|c|c|c|}
                 \hline
                 $x$ & $y$ & $z$ & $\overline{y}$ & $\overline{y}z$ & Maxitérminos\\ \hline
@@ -250,7 +251,7 @@
                 1 & 1 & 0 & 0 & 0 & $M_{5}$\\ \hline
                 1 & 1 & 1 & 0 & 0 & $M_{6}$\\ \hline
             \end{tabular}
-        \end{center}
+        \end{table}
 
 %-------------Pregunta 9-------------------------------------------
     \item Utilizando Mapas de Karnaugh simplifica la función.\\
@@ -267,7 +268,7 @@
             $
         \end{center}
         
-        \begin{figure}[h]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=5 cm]{img/mapa9.jpg}
         \end{figure}
@@ -308,8 +309,7 @@
             $
         \end{center}
         
-        \begin{center}
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|c|c|}
                 \hline
@@ -335,12 +335,10 @@
                 \hline  
             \end{tabular}
         \end{table}
-        \end{center}
 
         Agrupamos los números binarios según su índice.\\
 
-        \begin{center}
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|c|}
                 \hline
@@ -366,12 +364,10 @@
                 \hline  
             \end{tabular}\\
         \end{table}
-        \end{center}
 
         Obtenemos las adyacencias\\
 
-        \begin{center}
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|}
                 \hline
@@ -393,12 +389,10 @@
                 \hline 
             \end{tabular}\\
         \end{table}
-        \end{center}
 
         Nombramos las adyacencias \\
 
-        \begin{center}
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|}
                 \hline
@@ -421,7 +415,7 @@
             \end{tabular}\\
         \end{table}
        
-            \begin{table}[h]
+            \begin{table}[H]
             \centering
             \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
                 \hline
@@ -443,14 +437,13 @@
                 \hline 
             \end{tabular}\\
         \end{table}
-        \end{center}
             
-            \begin{figure}[h]
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=7cm]{img/mapa11.1.png}
             \end{figure}
 
-            \begin{figure}[h]
+            \begin{figure}[H]
                 \centering
                 \includegraphics[width=5 cm]{img/mapa11.2.png}
             \end{figure}
@@ -481,7 +474,9 @@
             + x_0 x_1 x_2 x_3 x_4 
             $
         \end{center}
-        \begin{center}
+        
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|c|c|}
                 \hline
                 Termino & Binario & Decial & Índice (\# 1s)\\ \hline
@@ -497,9 +492,10 @@
                 $x_0 x_1 x_2 \overline{x_3} x_4$  & 11101 & 29 & 4 \\ \hline  
                 $x_0 x_1 x_2 x_3 x_4$  & 11111 & 31 & 5 \\ \hline  
             \end{tabular}
-        \end{center}
+        \end{table}
         Agrupamos los números binarios según su indice:\\
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|c|}
                 \hline
                 Binario & Decial & Índice\\ \hline
@@ -515,10 +511,11 @@
                 11101 & 29 & 4 \\ \hline  
                 11111 & 31 & 5 \\ \hline  
             \end{tabular}
-        \end{center}
+        \end{table}
         Obtenemos las adyacencias: \\
 
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|}
                 \hline
                 Adyacencia de orden I & Binario\\ \hline
@@ -534,9 +531,10 @@
                 23,31 & 1-111 \\ \hline 
                 29,31 & 111-1 \\ \hline 
             \end{tabular}
-        \end{center}
+        \end{table}
 
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|}
                 \hline
                 Adyacencia de orden II & Binario\\ \hline
@@ -552,11 +550,12 @@
                 23,31 & 1-111 \\ \hline 
                 29,31 & 111-1 \\ \hline 
             \end{tabular}
-        \end{center}
+        \end{table}
         Como 2,6; 2,10; 6,14 y 10,14 son iguales a 0 - - 1 0, entonces lo consideraremos como un elemento único.\\
         Nombramos las adyacencias: \\
 
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|}
                 \hline
                 Adyacencia & Nombre\\ 
@@ -578,10 +577,11 @@
                 29,31 & Pl8 \\ 
                 \hline 
             \end{tabular}\\
-        \end{center}
+        \end{table}
     
         Ahora hacemos la tabla de adyacencias:
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
                 \hline
                     & 0 & 2 & 6 & 7 & 9 & 10 & 14 & 23 & 25 & 29 & 31\\ \hline
@@ -594,16 +594,17 @@
                 Pl7 &   &   &   &   &   &    &    & X  &    &    & X \\ \hline 
                 Pl8 &   &   &   &   &   &    &    &    &    & X  & X \\ \hline 
             \end{tabular}
-        \end{center}
+        \end{table}
         \hfill
 
-        \begin{figure}[h]
+        \begin{figure}[H]
             \centering
             \includegraphics[width=7cm]{img/12.png}
         \end{figure}
 
         Como hay exceso de implicantes entonces reducimos:
-        \begin{center}
+        \begin{table} [H]
+            \centering
             \begin{tabular}{|c|c|c|c|c|c|}
                 \hline
                     & 6 & 7  & 23 & 29 & 31\\ \hline
@@ -614,7 +615,7 @@
                 \rowcolor{yellow!50} Pl7 &  &    & X  &    & X \\ \hline 
                 \rowcolor{yellow!50} Pl8 &  &    &    & X  & X \\ \hline 
             \end{tabular}
-        \end{center}
+        \end{table}
         Como Pl3, Pl5, Pl7 y Pl8 son las de maximas adyacencias entonces:\\
         $X = Pl2 + Pl4 + Pl3 + Pl5 + Pl7 + Pl8$\\
         Sustituimos por sus valores decimales:\\
@@ -630,7 +631,8 @@
 \end{enumerate}
 
 
-%--\nocite{*}
-%--\printbibliography
+\newpage
+\nocite{*}
+\printbibliography
 
 \end{document}
