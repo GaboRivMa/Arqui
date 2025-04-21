@@ -27,20 +27,23 @@ coef_bin:
 	sw   $ra, 0($sp) #guarda la direccion para volver
     	sw   $a0, 4($sp) #guarda los valores 
     	sw   $a1, 8($sp) #guarda los valores
+    	
+    	# Guarda temporalmente los valores n y k
+    	move $t2, $a0  # n
+	move $t3, $a1  # k
 	
 	# CASOS BASE
 	beqz $a1, caso_base # if k==0 then 1
 	beq $a0, $a1, caso_base # if k==n then 1
 	
 	# CASO RECURSIVO
-	subi $a0, $a0, 1 # n-1
-	subi $a1, $a1, 1 # k-1
+	subi $a0, $t2, 1 # n-1
+	subi $a1, $t3, 1 # k-1
 	jal coef_bin #calcula recursivamente (n-1, k-1)
 	move $t0, $v0 #guarda el resultado en t0
  
-	lw   $a0, 4($sp) # recupera los valores iniciales
-    	lw   $a1, 8($sp) # recupera los valores iniciales
-	subi $a0, $a0, 1 # n-1
+	subi $a0, $t2, 1 # n-1
+	move $a1, $t3
 	jal coef_bin #calcula recursivamente (n-1, k)
 	move $t1, $v0 #guarda el resultado en t1
 
@@ -54,7 +57,9 @@ coef_bin:
     	jr   $ra #return
 
 caso_base:
-	li $v0, 1 #retorna 1
+	addi $v0, $zero, 1 #retorna 1
+	lw   $a0, 4($sp) # recupera los valores iniciales
+    	lw   $a1, 8($sp) # recupera los valores iniciales
 	jr $ra #regresa a donde se quedó en la ejecución
 	
 exit:
