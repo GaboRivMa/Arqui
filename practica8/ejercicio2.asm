@@ -60,7 +60,7 @@ coef_bin:
 caso_base:
 	addi $v0, $zero, 1 #retorna 1
 	lw   $ra, 0($sp) # recupera ra
-       	addi $sp, $sp, 12 # destruye la pila
+    addi $sp, $sp, 12 # destruye la pila
 	jr $ra #regresa a donde se quedó en la ejecución
 	
 	
