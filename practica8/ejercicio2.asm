@@ -1,76 +1,76 @@
-	.data
-n:	.word 2
-k:	.word 1
-mensaje: .asciiz "El coeficiente binomial es : "
-	.text
-	
+.data
+n:        .word 4
+k:        .word 2
+mensaje:  .asciiz "El coeficiente binomial es: "
+llamada:  .asciiz "\nLlamada a C("
+coma:     .asciiz ", "
+cierra:   .asciiz ")"
+
+.text
 main:
-	#prepara los valores para trabajar
-	lw 	$a0, n #guarda n
-	lw 	$a1, k #guarda 
-	#invoca a coef_bin para obtener el coeficniente binomail
-	jal coef_bin
-	move $s0, $v0  # Guardar resultado en $s0
-	
-	li   $v0, 4         # Syscall para imprimir cadena
-    	la   $a0, mensaje   # Cargar dirección del mensaje
-    	syscall
-    	move $a0, $s0 
-	li   $v0, 1         # Syscall para imprimir entero
-    	syscall
-	j exit	
+    lw  $a0, n              # Cargar n
+    lw  $a1, k              # Cargar k
+    jal coef_bin            # Llamar a la función recursiva
+    move $s0, $v0           # Guardar el resultado en $s0
 
-	
+    li   $v0, 4
+    la   $a0, mensaje       # Imprimir el mensaje
+    syscall
+
+    move $a0, $s0           # Imprimir el resultado
+    li   $v0, 1
+    syscall
+
+    j exit
+
 coef_bin:
-	# PILA
-	addi $sp $sp -12 # se crean 12 espacios 
-	sw   $ra, 0($sp) #guarda la direccion para volver
-    	sw   $a0, 4($sp) #guarda los valores 
-    	sw   $a1, 8($sp) #guarda los valores
-    	
-    	# Guarda temporalmente los valores n y k
-    	move $t2, $a0  # n
-	move $t3, $a1  # k
-	
-	# CASOS BASE
-	beqz $a1, caso_base # if k==0 then 1
-	beq $a0, $a1, caso_base # if k==n then 1
-	
-	# CASO RECURSIVO
-	subi $a0, $t2, 1 # n-1
-	subi $a1, $t3, 1 # k-1
-	jal coef_bin #calcula recursivamente (n-1, k-1)
-	move $t0, $v0 #guarda el resultado en t0
- 
-	subi $a0, $t2, 1 # n-1
-	move $a1, $t3
-	jal coef_bin #calcula recursivamente (n-1, k)
-	move $t1, $v0 #guarda el resultado en t1
+    # PILA
+    addi $sp, $sp, -12      # Reservar espacio en la pila
+    sw   $ra, 0($sp)        # Guardar el valor de $ra (dirección de retorno)
+    sw   $a0, 4($sp)        # Guardar n en la pila
+    sw   $a1, 8($sp)        # Guardar k en la pila
 
-    	add $v0, $t0, $t1 # (n-1,k-1)+(n-1,k)
-    	
-    	# CONCLUSION
-    	lw   $ra, 0($sp) # recupera ra 
-    	lw   $a0, 4($sp) # recupera los valores iniciales
-    	lw   $a1, 8($sp) # recupera los valores iniciales
-	addi $sp, $sp, 12 # destruye la pila
-    	jr   $ra #return
+    # Casos base
+    beqz $a1, caso_base     # Si k == 0, el resultado es 1
+    beq  $a0, $a1, caso_base # Si n == k, el resultado es 1
+
+    # Calcular (n-1, k-1)
+    subi $a0, $a0, 1        # n = n-1
+    subi $a1, $a1, 1        # k = k-1
+    jal coef_bin            # Llamada recursiva para (n-1, k-1)
+    move $t0, $v0           # Guardar el resultado de (n-1, k-1) en $t0
+
+    # Restaurar valores de n y k para la siguiente llamada
+    lw   $a0, 4($sp)        # Restaurar n
+    lw   $a1, 8($sp)        # Restaurar k
+
+    # Calcular (n-1, k)
+    subi $a0, $a0, 1        # n = n-1
+    jal coef_bin            # Llamada recursiva para (n-1, k)
+    move $t1, $v0           # Guardar el resultado de (n-1, k) en $t1
+
+    # Sumar los resultados de (n-1, k-1) y (n-1, k)
+    add $v0, $t0, $t1       # El resultado final es la suma de los dos casos
+
+    # Restaurar los valores de la pila
+    lw $ra, 0($sp)          # Recuperar el valor de $ra
+    lw $a0, 4($sp)          # Recuperar el valor de n
+    lw $a1, 8($sp)          # Recuperar el valor de k
+    addi $sp, $sp, 12       # Liberar espacio en la pila
+
+    jr $ra                  # Volver a la función que llamó a coef_bin
 
 caso_base:
-	addi $v0, $zero, 1 #retorna 1
-	lw   $a0, 4($sp) # recupera los valores iniciales
-    	lw   $a1, 8($sp) # recupera los valores iniciales
-	jr $ra #regresa a donde se quedó en la ejecución
-	
+    li $v0, 1               # Si k == 0 o n == k, el coeficiente es 1
+
+    # Restaurar los valores de la pila
+    lw $ra, 0($sp)
+    lw $a0, 4($sp)
+    lw $a1, 8($sp)
+    addi $sp, $sp, 12
+
+    jr $ra                  # Volver a la función que llamó a coef_bin
+
 exit:
-    	li $v0, 10 #sale del programa
-    	syscall	
-
-
-
-
-
-
-
-
- 
+    li $v0, 10
+    syscall
