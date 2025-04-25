@@ -291,92 +291,7 @@
         + x_0 x_1 x_2 x_3 x_4 
         $
     \end{center}
-    Vamos a usar el método de Quine-McCluskey:\\
-    \begin{table} [H]
-        \centering
-        \begin{tabular}{|c|c|c|c|}
-            \hline
-            Termino & Binario & Decial & Índice (\# 1s)\\ \hline
-            $\overline{x_0 x_1 x_2 x_3 x_4}$  & 00000 & 0 & 0 \\ \hline
-            $\overline{x_0 x_1 x_2} x_3 \overline{x_4}$  & 00010 & 2 & 1 \\ \hline  
-            $\overline{x_0 x_1} x_2 x_3 \overline{x_4}$  & 00110 & 6 & 2 \\ \hline  
-            $x_0 \overline{x_1} x_2 x_3 x_4$  & 10111 & 23 & 4 \\ \hline  
-            $x_0 x_1 \overline{x_2 x_3} x_4$  & 11001 & 25 & 3 \\ \hline  
-            $\overline{x_0} x_1 \overline{x_2 x_3} x_4$  & 01001 & 9 & 2 \\ \hline  
-            $x_0 x_1 x_2 x_3 x_4$  & 11111 & 31 & 5 \\ \hline  
-        \end{tabular}
-    \end{table}
-    Agrupamos los números binarios según su indice:\\
-    \begin{table} [H]
-        \centering
-        \begin{tabular}{|c|c|c|}
-            \hline
-            Binario & Decial & Índice\\ \hline
-            00000 & 0 & 0 \\ \hline
-            00010 & 2 & 1 \\ \hline  
-            00110 & 6 & 2 \\ \hline 
-            01001 & 9 & 2 \\ \hline
-            11001 & 25 & 3 \\ \hline    
-            10111 & 23 & 4 \\ \hline  
-            11111 & 31 & 5 \\ \hline  
-        \end{tabular}
-    \end{table}
-    Obtenemos las adyacencias: \\
-
-    \begin{table} [H]
-        \centering
-        \begin{tabular}{|c|c|}
-            \hline
-            Adyacencia de orden I & Binario\\ \hline
-            0,2 & 000-0 \\ \hline 
-            2,6 & 00-10 \\ \hline 
-            9,25 & -1001 \\ \hline   
-            23,31 & 1-111 \\ \hline 
-        \end{tabular}
-    \end{table}
-    Nombramos las adyacencias: \\
-
-    \begin{table} [H]
-        \centering
-        \begin{tabular}{|c|c|}
-            \hline
-            Adyacencia & Nombre\\ \hline
-            0,2 & Pl1 \\ \hline 
-            2,6 & Pl2 \\ \hline 
-            9,25 & Pl3 \\ \hline 
-            23,31 & Pl4 \\ \hline 
-        \end{tabular}\\
-    \end{table}
-
-    Ahora hacemos la tabla de adyacencias:
-    \begin{table} [H]
-        \centering
-        \begin{tabular}{|c|c|c|c|c|c|c|c|}
-            \hline
-                & 0 & 2 & 6 & 9 & 23& 25 & 31 \\ \hline
-            Pl1 & X & X &   &   &   &    &    \\ \hline 
-            Pl2 &   & X & X &   &   &    &    \\ \hline 
-            Pl3 &   &   &   & X &   & X  &    \\ \hline 
-            Pl4 &   &   &   &   & X &    & X  \\ \hline 
-        \end{tabular}
-    \end{table}
-    \hfill
-
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=7cm]{img/10.png}
-    \end{figure}
-
-    Como no hay exceso de implicantes entonces:\\
-    $X = Pl1 + Pl2 + Pl3 + Pl4$\\
-    Sustituimos por sus valores decimales:\\
-    $X = (0,2) + (2,6) + (9,25) + (23,3)$\\
-    Sustituimos por sus valores binarios:\\
-    $X = (000-0) + (00-10) + (-1001) + (1-111)$\\
-    Sustituimos por sus valores $x_{i}$:\\
-    $X = \overline{x_0 x_1 x_2 x_4} + \overline{x_0 x_1}x_3\overline{x_4} + x_1\overline{x_2 x_3}x_4 + x_0 x_2 x_3 x_4$\\
-    $\therefore$ La expresión reducida es: \\
-    $\overline{x_0 x_1 x_2 x_4} + \overline{x_0 x_1}x_3\overline{x_4} + x_1\overline{x_2 x_3}x_4 + x_0 x_2 x_3 x_4$\\
+   
 %-------------Pregunta 11-------------------------------------------
     \item Utilizando el algoritmo de Quine-McCluskey realiza la siguiente reducción.\\
 
@@ -708,9 +623,9 @@
         Sustituimos por sus valores binarios:\\
         $X = (000-0) + (-1001) + (0011-) + (-0111) + (1-111) + (111-1)$\\
         Sustituimos por sus valores $x_{i}$:\\
-        $X = \overline{x_0 x_1 x_2 x_4} + x_1 \overline{x_2 x_3} x_4 + \overline{x_0 x_1} x_2 x_3 + \overline{x_1} x_2 x_3 x_4 + x_0 x_2 x_3 x_4 + x_0 x_1 x_2 x_4$\\
+        $X = (\overline{x_0 x_1 x_2 x_4}) + (x_1 \overline{x_2 x_3} x_4) + (\overline{x_0 x_1} x_2 x_3) + (\overline{x_1} x_2 x_3 x_4) + (x_0 x_2 x_3 x_4) + (x_0 x_1 x_2 x_4)$\\
         $\therefore$ La expresión reducida es: \\
-        $\overline{x_0 x_1 x_2 x_4} + x_1 \overline{x_2 x_3} x_4 + \overline{x_0 x_1} x_2 x_3 + \overline{x_1} x_2 x_3 x_4 + x_0 x_2 x_3 x_4 + x_0 x_1 x_2 x_4$\\
+        $(\overline{x_0 x_1 x_2 x_4}) + (x_1 \overline{x_2 x_3} x_4) + (\overline{x_0 x_1} x_2 x_3) + (\overline{x_1} x_2 x_3 x_4) + (x_0 x_2 x_3 x_4) + (x_0 x_1 x_2 x_4)$\\
 
 
 \end{enumerate}
