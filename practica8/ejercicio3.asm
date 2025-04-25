@@ -15,6 +15,6 @@ tesoro:
 	li $v0 10 #Terminamos el programa
 	syscall
 codigo:
-	la $t0, tesoro
-	addi $t0, $t0, 8
-	jr $t0
+	la $t0, tesoro #Guardamos la direccion de tesoro
+	addi $t0, $t0, 8 #Nos saltamos las primeras dos instrucciones
+	jr $t0 #Saltamos a la nueva direccion
