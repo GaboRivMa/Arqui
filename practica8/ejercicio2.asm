@@ -17,7 +17,6 @@ main:
 	
 	j imprimir_resultado
 
-	
 coef_bin:
 	# PILA
 	addi $sp $sp -12 # se crean 12 espacios 
@@ -93,14 +92,5 @@ imprimir_resultado:
     	
 	
 exit:
-    	li $v0, 10 #sale del programa
-    	syscall	
-
-
-
-
-
-
-
-
- 
+    li $v0, 10
+    syscall

@@ -3,7 +3,10 @@ a:	.word 4
 b:	.word 5
 	.text
 .globl main
-main:	
+
+#El código reliza la operacion b^a
+
+main:	# Inicializa los valores de a y b y manda a llamar a mist_1
 	#preaumbulo main
 	lw 	$a0, a #guarda a en a0
 	lw 	$a1, b #guarda b en a1
@@ -33,7 +36,7 @@ main:
 	syscall        # terminar el programa correctamente
 
 #mist_1 recibe como argumentos $a0 y $a1
-mist_1: 
+mist_1: # Llama a mist_0 y va acumulando su resultado, repite este proceso a0 veces
 	#preambulo mist
 	addi $sp, $sp, -12 # se crean 12 espacios 
 	sw   $ra, 8($sp) #guarda la direccion para volver
@@ -66,7 +69,7 @@ end_1:
 	jr $ra
 	
 #mist_o recibe como argumentos $a0 y $a1
-mist_0: 
+mist_0: # multiplica a0*a1 y devuelve el resultado
 	#preambulo mist_0
 	addi 	$sp, $sp, -4 # se crean 12 espacios 
 	sw   	$ra, 0($sp) #guarda la direccion para volver
