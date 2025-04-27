@@ -1,18 +1,17 @@
 	.data
 a:	.word 4
 b:	.word 5
-msj: .asciiz "Ingresa un valor para m: "
 	.text
 .globl main
 main:	
 	#preaumbulo main
-	addi 	$sp $sp -8 # se crean 12 espacios 
+	lw 	$a0, a #guarda a en a0
+	lw 	$a1, b #guarda b en a1
+	addi 	$sp, $sp, -8 # se crean 12 espacios 
 	sw   	$a0, 0($sp) #guarda los valores3
 	sw   	$ra, 4($sp) #guarda la direccion para volver
     	
 	#invocacion de mist_1
-	lw 	$a0, a #guarda a en a0
-	lw 	$a1, b #guarda b en a1
 	jal mist_1
 	
 	#retorno de mist_1
@@ -21,8 +20,14 @@ main:
 	#conclusion main
 	lw $a0, 0($sp) #guarda la direccion para volver
 	lw $ra, 4($sp)
-	addi $sp $sp, 8
+	addi $sp, $sp, 8
 	move $a0, $t0   # mover el resultado a $a0
+	
+	#Para imprimir resultado
+	#li   $v0, 1         # Syscall para imprimir entero
+    	#syscall
+    	
+    	
 	#fin del programa
 	li $v0, 10     # código de salida del sistema
 	syscall        # terminar el programa correctamente
@@ -30,7 +35,7 @@ main:
 #mist_1 recibe como argumentos $a0 y $a1
 mist_1: 
 	#preambulo mist
-	addi $sp $sp -12 # se crean 12 espacios 
+	addi $sp, $sp, -12 # se crean 12 espacios 
 	sw   $ra, 8($sp) #guarda la direccion para volver
     	sw   $s0, 4($sp) #guarda los valores 
     	sw   $a1, 0($sp) #guarda los valores
@@ -48,7 +53,7 @@ loop_1: beqz $s0, end_1 #if s0==0 then end_1,
 	#retorno de mist_0
 	move	$t1, $v0 #pasa el argumento $a0
 	
-	subi	$s0, $s0, 1 #pasa el argumento $a1
+	addi	$s0, $s0, -1 #pasa el argumento $a1
 	j loop_1
 
 end_1: 
@@ -63,7 +68,7 @@ end_1:
 #mist_o recibe como argumentos $a0 y $a1
 mist_0: 
 	#preambulo mist_0
-	addi 	$sp $sp -4 # se crean 12 espacios 
+	addi 	$sp, $sp, -4 # se crean 12 espacios 
 	sw   	$ra, 0($sp) #guarda la direccion para volver
 
 	mult	$a0, $a1
